@@ -1,5 +1,16 @@
 <script>
-    let tempratures=[30, 32, 31, 39, 33, 28, 30];
-    tempratures[3]+=2;
-    console.log("update tempratures:",tempratures);
+    let N=3;
+    let M=2;
+    let arr=[
+        [1,2],
+        [3,4],
+        [5,6]
+    ];
+    for(let i=0;i<N;i++){
+        let row="";
+        for(let j=0;j<M;j++){
+            row+=arr[i][j]+" ";
+        }
+        console.log(row);
+    }
 </script>
