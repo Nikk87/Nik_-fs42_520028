@@ -1,0 +1,32 @@
+<script>
+let N = 4; 
+let M = 5; 
+let matrix = [
+    [1, 2, 3, 4, 5],
+    [6, 7, 8, 9, 1],
+    [2, 3, 4, 5, 6],
+    [7, 8, 9, 1, 2]
+];
+function printZigZag(matrix, N, M) {
+    let result = [];
+
+    for (let i = 0; i < N; i++) {
+        if (i % 2 === 0) {
+            
+            for (let j = M - 1; j >= 0; j--) {
+                result.push(matrix[i][j]);
+            }
+        } else {
+            for (let j = 0; j < M; j++) {
+                result.push(matrix[i][j]);
+            }
+        }
+    }
+
+    console.log(result.join(" "));
+}
+
+
+printZigZag(matrix, N, M);
+
+</script>
